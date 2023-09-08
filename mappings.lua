@@ -3,6 +3,9 @@
 -- Please use this mappings table to set keyboard mapping since this is the
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
+
+local cmp = require'cmp'
+
 return {
   -- first key is the mode
   n = {
@@ -24,5 +27,8 @@ return {
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  i = {
+    ["<C-x>"] = { cmp.mapping.complete() }
   },
 }
