@@ -23,7 +23,7 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-    ["F4"] = { vim.cmd.UndotreeToggle },
+    ["<F4>"] = { vim.cmd.UndotreeToggle, desc = "Toggle Undo Tree" },
   },
   t = {
     -- setting a mapping to false will disable it
