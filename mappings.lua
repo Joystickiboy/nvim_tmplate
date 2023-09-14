@@ -5,6 +5,7 @@
 -- automatically pick-up stored data by this setting.)
 
 local cmp = require'cmp'
+local neogen = require'neogen'
 
 return {
   -- first key is the mode
@@ -24,6 +25,7 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<F4>"] = { vim.cmd.UndotreeToggle, desc = "Toggle Undo Tree" },
+    ["<leader>gg"] = { neogen.generate, desc = "Create documentation" },
   },
   t = {
     -- setting a mapping to false will disable it

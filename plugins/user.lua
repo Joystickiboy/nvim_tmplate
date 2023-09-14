@@ -30,4 +30,19 @@ return {
     "mbbill/undotree",
     lazy = false,
   },
+  {
+    'numToStr/Comment.nvim',
+    opts = {
+        -- add any options here
+    },
+    lazy = false,
+  },
+  { 
+    "danymat/neogen", 
+    dependencies = "nvim-treesitter/nvim-treesitter", 
+    config = true,
+    lazy = false,
+    -- Uncomment next line if you want to follow only stable versions
+    -- version = "*" 
+  }
 }
