@@ -7,6 +7,9 @@
 local cmp = require'cmp'
 local neogen = require'neogen'
 
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
 return {
   -- first key is the mode
   n = {
