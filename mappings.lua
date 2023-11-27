@@ -29,6 +29,7 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<F4>"] = { vim.cmd.UndotreeToggle, desc = "Toggle Undo Tree" },
     ["<leader>gg"] = { neogen.generate, desc = "Create documentation" },
+    ["<leader>ga"] = { vim.cmd.LazyGit, desc = "Toggle LazyGit" },
   },
   t = {
     -- setting a mapping to false will disable it

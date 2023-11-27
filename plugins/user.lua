@@ -44,5 +44,13 @@ return {
     lazy = false,
     -- Uncomment next line if you want to follow only stable versions
     -- version = "*" 
-  }
+  },
+  {
+    "kdheepak/lazygit.nvim",
+    -- optional for floating window border decoration
+    dependencies = {
+        "nvim-lua/plenary.nvim",
+    },
+    lazy = false,
+  },
 }
