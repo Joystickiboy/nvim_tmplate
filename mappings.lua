@@ -30,6 +30,8 @@ return {
     ["<F4>"] = { vim.cmd.UndotreeToggle, desc = "Toggle Undo Tree" },
     ["<leader>gg"] = { neogen.generate, desc = "Create documentation" },
     ["<leader>ga"] = { vim.cmd.LazyGit, desc = "Toggle LazyGit" },
+    ["<tab>"] = { vim.cmd.bnext, desc = "Next buffer" },
+    ["<S-tab>"] = { vim.cmd.bprevious, desc = "Previous buffer" },
   },
   t = {
     -- setting a mapping to false will disable it
