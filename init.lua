@@ -104,6 +104,6 @@ return {
     -- require 'lspconfig'.clangd.setup {
     --   filetypes = { "c", "cpp", "cc", "cp" }
     -- }
-
+  vim.opt["guicursor"] = "i:block"
   end,
 }
