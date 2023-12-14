@@ -87,10 +87,12 @@ return {
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
     -- Set up custom filetypes
-    -- vim.filetype.add {
-    --   extension = {
-    --     foo = "fooscript",
-    --   },
+    vim.filetype.add {
+      extension = {
+        cp = "cpp",
+      },
+    }
+
     --   filename = {
     --     ["Foofile"] = "fooscript",
     --   },
@@ -98,5 +100,10 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+
+    -- require 'lspconfig'.clangd.setup {
+    --   filetypes = { "c", "cpp", "cc", "cp" }
+    -- }
+
   end,
 }
