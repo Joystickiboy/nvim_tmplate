@@ -57,4 +57,8 @@ return {
     "tpope/vim-fugitive",
     lazy = false,
   },
+  {
+    "cossonleo/dirdiff.nvim",
+    lazy = false,
+  },
 }
