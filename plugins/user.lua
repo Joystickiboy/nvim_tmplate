@@ -57,4 +57,38 @@ return {
     "tpope/vim-fugitive",
     lazy = false,
   },
+  {
+    "ellisonleao/carbon-now.nvim",
+    lazy = true,
+    cmd = "CarbonNow",
+    opts = {},
+  },  
+  {
+    "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = {},
+  },
+  {
+    "adalessa/laravel.nvim",
+    dependencies = {
+      "nvim-telescope/telescope.nvim",
+      "tpope/vim-dotenv",
+      "MunifTanjim/nui.nvim",
+      "nvimtools/none-ls.nvim",
+    },
+    cmd = { "Sail", "Artisan", "Composer", "Npm", "Yarn", "Laravel" },
+    keys = {
+      { "<leader>ka", ":Laravel artisan<cr>" },
+      { "<leader>kr", ":Laravel routes<cr>" },
+      { "<leader>km", ":Laravel related<cr>" },
+    },
+    event = { "VeryLazy" },
+    config = true,
+  },
+  {
+    "ray-x/lsp_signature.nvim",
+    event = "VeryLazy",
+    opts = {},
+    config = function(_, opts) require'lsp_signature'.setup(opts) end
+  },
 }
